@@ -3,6 +3,9 @@
   --blue-line-card: hsl(212, 86%, 64%);
   --orange-line-card: hsl(34, 97%, 64%);
   --red-line-card: hsl(0, 78%, 62%);
+  --bg-color: hsl(0, 0%, 98%);
+  --font-color: hsl(229, 6%, 66%);
+  --heading-color: hsl(234, 12%, 34%);
 }
 
 html {
@@ -10,10 +13,77 @@ html {
   font-size: 15px;
 }
 
+body {
+  background-color: var(--bg-color);
+}
+
+header {
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading-color);
+}
+
+p {
+  color: var(--font-color);
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+h3 { 
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+header > p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid green;
+}
+
+.feature-middle-cards {
+  border: 2px solid yellow;
+}
+
 .feature-card {
-  border: 1px solid rgb(190, 189, 189);
+  position: relative;
+  -webkit-box-shadow: -1px 9px 19px -1px rgba(205,205,207,1);
+  -moz-box-shadow: -1px 9px 19px -1px rgba(205,205,207,1);
+  box-shadow: -1px 9px 19px -1px rgba(205,205,207,1);
   border-top: 4px solid var(--cyan-line-card);
   border-radius: 5px;
+  padding: 1rem 2rem 4rem 2rem;
+  width: 15rem;
+  margin-top: 1.5rem;
+}
+
+.feature-card p {
+  color: var(--font-color);
+}
+
+.feature-card img {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3rem;
 }
 
 .feature-card.cyan {
