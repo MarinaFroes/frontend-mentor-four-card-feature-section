@@ -5,6 +5,11 @@
   --red-line-card: hsl(0, 78%, 62%);
 }
 
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
 .feature-card {
   border: 1px solid rgb(190, 189, 189);
   border-top: 4px solid var(--cyan-line-card);
