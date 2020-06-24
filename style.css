@@ -1,2 +1,38 @@
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+:root {
+  --cyan-line-card: hsl(180, 62%, 55%);
+  --blue-line-card: hsl(212, 86%, 64%);
+  --orange-line-card: hsl(34, 97%, 64%);
+  --red-line-card: hsl(0, 78%, 62%);
+}
+
+
+.feature-card {
+  border: 1px solid rgb(190, 189, 189);
+  border-top: 4px solid var(--cyan-line-card);
+  border-radius: 5px;
+}
+
+.feature-card.cyan {
+  border-top: 4px solid var(--cyan-line-card);
+}
+
+.feature-card.orange {
+  border-top: 4px solid var(--orange-line-card);
+}
+
+.feature-card.red {
+  border-top: 4px solid var(--red-line-card);
+}
+
+.feature-card.blue {
+  border-top: 4px solid var(--blue-line-card);
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
+
